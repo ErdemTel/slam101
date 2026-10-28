@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slam101"
+version = "0.0.0"
+description = "Learned VIO correction for the Mighty Camera, trained with SO-101 arm reference motion."
+readme = "README.md"
+requires-python = ">=3.10"
+# Core dependencies serve inference only (Mighty data).
+dependencies = []
+
+[project.optional-dependencies]
+# Arm measurements, kinematics, and synchronization; never needed for inference.
+reference = []
+# Model training and evaluation against reference motion.
+train = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

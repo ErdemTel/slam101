@@ -1,0 +1,50 @@
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+.python-version
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Credentials
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# Recordings and datasets
+recordings/
+data/
+datasets/
+*.bag
+*.mcap
+*.db3
+
+# Checkpoints
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Generated outputs
+outputs/
+runs/
+logs/
+results/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
