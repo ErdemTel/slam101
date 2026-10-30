@@ -47,4 +47,5 @@ results/
 # Editors and OS
 .vscode/
 .idea/
+.claude/
 .DS_Store
